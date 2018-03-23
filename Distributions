@@ -1,0 +1,37 @@
+Binomial Distribution: 
+When to use: 
+1. When you have only 2 outcomes for a random variable under consideration, success and failure;
+2. Independent event, the probability of a event now, does not affect the probability of the event occuring there after
+
+
+Poisson Distribution.
+1. can be used when p is very small (0.01),
+2. Is a specific case of binomial distribution
+3. ASuumptions:
+	 Same as binomial in the sense:
+	 Independence of events., occurence of one event does not affect the probabilty of the other occuring\
+
+	 Different from binomial:
+	 the number of experiments is far far greater,
+	 and the 
+
+
+ WHEN THERE IS A NEED TO GET MORE GRANUALAR!..
+ Granular in the sense, of time frame, say we get the event per hour, that exactly one cat crosses the path., so outcome is 1 if one cat ccrosses in an hour
+
+
+You are given the expected value, meaning, nmnmū                                                                                        
+ Probablityly(F(X=x)) where x = 1, i.e. exactly one cat crosses, (nCx)* p ** x * q ** (n-x).
+ here , n is the number of trials in that bigger interval and p is the probability of success in each of those intervals.;
+
+ i.e. n= 1hour, p - probabilty that one cat crosses per hour
+ then if 2 cat cross, we still 
+
+
+ Suppose µ = n * p is the expected value,  us is the mean of distrubiton or the 
+
+NUmber of success in the hour, 
+ NOTE: even if  2 cat crosses your path in a minute, the outcome of event is success.
+
+ WHat do you need to do?
+ NEED TO GO GRANULAR!, in the event of timeframe 

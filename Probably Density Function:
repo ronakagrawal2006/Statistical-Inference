@@ -1,0 +1,20 @@
+Probably Density Function:
+For a given Random Variable , A probably density function is a the variable related to the outcome of that variable.
+
+Given, a random variable, We want to know that is the probability that a particular value is take by that random variable.
+Say for a dice, a random variable could take values 1-6,
+So the probability density function would take values 1/6 evenly. The value on x would range from 1-6 with value on y as 1/6.
+
+that is a probability density function.
+Now, that was for a discrete varaible.
+
+For a continuous varaible, we would have to define the range, which would be the area under curve for that range, i.e. the area under the curve for the range would give us the probability that the given random variable can take that value.
+
+
+A cumulative distribtion function is a variant of continuos variable, where we already have the left hand side of the range defined as 0, and we only would need the RHS, ie. to say the lHS of range is 0, so CDF of 0.75 means the probabityly that the random variable takes the value between the range of 0 and 0.75 (given that is a valid range for the random variable under consideration.)
+
+
+Survival Distribution Function on the other hand has the RHS predefined as the max value that the random varaible can take.
+
+
+

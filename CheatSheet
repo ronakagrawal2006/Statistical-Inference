@@ -1,0 +1,76 @@
+Things ppl miss when they start Gradient Descent.
+
+1. why do we have Cross entropy as log;
+Why does the function looks like the way it is.?
+
+a. We are interested in getting the better model, so we need to compare one model with another.
+To compare model,
+>what we do is get the probability predicted of the model for the current class.
+	>> we make the model predict o/p classes in probabilty, i.e. P(Red)=0.4 meaning, that the p(Blue)=0.6 give there are only 2 classes.
+	>> eg. Red and Blue class, 4 points, we get the probabilty of red point being red, and blue point being blue(irrespecitve whichever prob is higher.)
+>Given the events are independent, we take product of probabilties, to get the overall confidence of the model around the classifciation is made.
+
+If this is greater, we have correctly classified the points,
+if this is smaller, we have some mislabbled classifcations.
+
+Now, given that we have very small numbers and many of them, we would want to avoid products, as slight change in one could have significant impact.
+So we have Product > BAD, and SUM > GOOD,; Now to acievet that we use logs, as log ab = loga+logb 
+
+but log of a number from 0-1 is -ve so we add a -ve sign to get a range of positive information.
+
+
+Now this piece of information that we extracted from the function is called Cross Entropy.
+ the function looks like -ln(p(y)) for that event.
+ If we have 2 classes the functuin looks lije :  y * -ln(p(y)) + (1-y) * -ln(p(1-y)).... this is just to take the information when a particular event acutally occurs.
+
+
+ if we have more classes, 1-y would not be 1-y, instead be some other values(as that is applcable only for 2 classes, complement Rule,),
+ also,given so y1 * -ln(p(y)) for all events is the cross entropy for that event i.e. it gives us some information about the model's performance.
+
+
+
+
+ Log Loss: Why do we need this,: instead of predictiing 0 or 1, we just output the probability of all classes, i.e. because, for gradient descent to work, the error function has to be continuous and cannot be discrete;
+ intutively because, if you binary o/p , as in the case with discrete values, you will not know where to descend, if there is flat near by.
+ instead, if you have a continuous variable with distance from postives as well, you will have an intution where could compare until infintie precision.
+
+ So, log loss is the term. Again you take log, coz Sum is better than product.
+
+
+
+ e-> Natural Log: Compound interest example.
+ If you have to slot 1(1+1/n)^n, this would be bounded to 2.78145...
+
+when you want to bound something to 0 to 1, you use sigmoid. 1/(1+e^-x)
+
+
+
+
+
+Regularization:
+Why do we need it?
+Given 2 models of 2 points, when comparing,x1+x2, or 10x1 + 10x2,
+Both give us the same line.
+The prediction is the sigmoid of the linear function
+
+It it harder to gradient descent on steep functions,
+Functions become steep when the coeffiecients of weights are higher. That is because the derivatives(slope) of the curve is close to zero at the terminals and very large.
+
+Thus, to do gradient descent properly, we need a model which has a gentle slope and not a steep slope.
+for intuition, one can say, that the model with steep or very low slopes are very certain and gives little room for gradient descent.
+Also, if the certain model makes errors in classification, the errors generated will be large, and will be diffucult to tune to model that correct it. 
+
+The intuition here is we say that Larger Coefficients could probably lead you into overfitting. 
+So we would want to avoid large coefficients.
+
+So, what do we do? we punish high coefficients. How do we do it?
+Given that we minimze error using error function, and we want to stay away from high coeff. we add a term that will increase error when the coeff are high, and will not contibute much to error when the coeff are small.
+
+How do get if weitghts are big? 2 ways: a. add the abosulute values,and mutiply by a constant lambda.
+b. sum of squares of wights and multiply by lambda. 
+The first one is L1-Regularization,and the Second one is L2-Regularization.
+Once again:
+Process: Larger coeff could well probably lead to overfitting--> Need to punish them-> Update error functoin to add a term that does the second. That's it.
+
+
+
