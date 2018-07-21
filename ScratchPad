@@ -1,0 +1,48 @@
+ScratchPad
+
+2 ways, just go brute force of the stats class and finish most bits of it.
+ Estimated Time?
+
+
+
+Topics to cover under fundamentals:
+Modeling data distributions: Statistics and probability - Start here  - Required         Pts: 2 
+Study design: Statistics and probability - Required												Pts: 2
+Random variables: Statistics and probability - cover this quick, basically skim 			Pts: 1  - 1 hr
+Sampling distributions: Statistics and probability - this is quick								Pts: 2  - 
+Confidence intervals: Statistics and probability - need time here - 							Pts: 2
+
+~ 5 hrs for 9 points: 
+
+Significance tests (hypothesis testing): Statistics and probability - take time here and understand  			Pts: 4	- 2hr
+Two-sample inference for the difference between groups: Statistics and probability - have no idea			Pts: 4	- 2 hr
+Inference for categorical data (chi-square tests): Statistics and probability - have no idea, but important	Pts: 4+2- 3 hr
+Advanced regression (inference and transforming): Statistics and probability - important							Pts: 4+2- 3 hr
+Analysis of variance (ANOVA): Statistics and probability - important 														Pts: 8	- 3 hr
+
+
+
+
+
+Topics to cover as per CV:
+LGBM.
+Adaboost.
+
+Also, take sometime out, navigate thru CV, and work out the topics required for each project
+
+
+
+
+
+
+
+
+
+Analyzing categorical data: Statistics and probability
+Displaying and comparing quantitative data: Statistics and probability
+Summarizing quantitative data: Statistics and probability
+
+Exploring bivariate numerical data: Statistics and probability - Required
+Probability: Statistics and probability - Basiscs Covered, probably skip
+Counting, permutations, and combinations: Statistics and probability - probably skip
+
