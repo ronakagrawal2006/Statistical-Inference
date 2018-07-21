@@ -1,0 +1,3 @@
+The point is to get a number that you can read and easily know what time it represents, e.g. 8121506 refers to 12:15:06 on day 8. So there is a numerical gap between e.g., 8115959 and 8120000, but the times are in the right order, which is what matters
+
+The critical times were obtained by looking at the train and test files, and shifted by one day. For example, the train file ends at 16:00:00 on the 9th, so the first point in time not in the train file is 16:00:01, and we shift back bay a day to get 8160001. (The reason for shifting by a day is to use data during the validation process that are analogous to the data used when making final predictions.) The other times represent, shifted by a day, the beginning and end of the test file and the gaps in the test data.

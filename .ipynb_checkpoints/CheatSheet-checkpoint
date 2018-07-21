@@ -1,6 +1,6 @@
 Things ppl miss when they start Gradient Descent.
 
-1. Why do we have Cross entropy as log;
+1. why do we have Cross entropy as log;
 Why does the function looks like the way it is.?
 
 a. We are interested in getting the better model, so we need to compare one model with another.
@@ -43,9 +43,9 @@ Now this piece of information that we extracted from the function is called Cros
 
 when you want to bound something to 0 to 1, you use sigmoid. 1/(1+e^-x)
 
-https://www.linkedin.com/in/ronak-agrawal/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BW%2FB52aPwSoe5Snpl79tIkw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-actor
 
-https://www.linkedin.com/feed/update/urn:li:activity:6377211222844104704
+
+
 
 Regularization:
 Why do we need it?
